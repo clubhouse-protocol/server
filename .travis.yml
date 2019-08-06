@@ -22,3 +22,6 @@ matrix:
     - npm test
     after_script:
     - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+env:
+  global:
+    secure: UEN/HU4S1k7149B0Ad9zBOy4vrwAHsqtkfils47z0dQG48NxWPDXAJaoNbTFi9VkTf0HOA0ZNHSsuTk6mwB2XDQ27ehhOA+Ir0flUKA7d8UVvb58gwAANtWGM/3kNwrvz++/D2++tLVNAcQDDf6qF7tUtoBcHpq5XSBKxKdJEYpzKGzJtoCcutpR0+0D2IwImpUgx5rqTSKetbjCNkhd7BO7+Byuav/uNk1MOLUK3TNuNFq8BoJCOum++O0Mn7igfQLScf8IrnhLABjvchpccPmX6Q0bjTy/dTuSkz1Ue6Iph3j98AYjGw2+mbpzLlP8EwXIx94C2UmhrBWTri0eDE2FSDSuLJniB070pPgVzld7ErztCKps1107avn98SMW9eZIy5nRHBWgak9Ruxia2e/SathO+1p3D8/Q9oWr9y31sk/7aXBZNVs4pJ36ql1+lJK4qb7yP4R9vtdZPpNYU5dRRNxaEzBN3u7Dg0hUxPb+mIN0Szu8UQ2qdGl1F51EzrliMYNEwhT6sLFeSmbpwQfl8Y98MF3jTZM3Y/LxsJevZwiV8lCzHNiqz/jaWXZoudiTCZQVYyZBd3uGD4VRWQESbte1MivNlGpsdvj/BPbQTGbogI+DzBINLRWBuSWth7u/Q/EVwAXgsLCn0p2OT+/Y47vPMfPDW/Q9JEt2L0w=
