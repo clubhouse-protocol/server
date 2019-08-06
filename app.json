@@ -1,0 +1,7 @@
+{
+  "name": "Clubhouse Protocol Server",
+  "description": "A server instance for clubhouse-protocol",
+  "repository": "hhttps://github.com/clubhouse-protocol/server",
+  "logo": "https://avatars3.githubusercontent.com/u/53578097?s=200&v=4",
+  "keywords": ["node", "express", "clubhouse-protocol"]
+}
