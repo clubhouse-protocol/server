@@ -1,3 +1,5 @@
 # Clubhouse Protocol Server
 
 [![Known Vulnerabilities](https://snyk.io//test/github/clubhouse-protocol/server/badge.svg?targetFile=package.json)](https://snyk.io//test/github/clubhouse-protocol/server?targetFile=package.json) [![Build Status](https://travis-ci.org/clubhouse-protocol/server.svg?branch=master)](https://travis-ci.org/clubhouse-protocol/server) [![Maintainability](https://api.codeclimate.com/v1/badges/36fabf44e561a0701a6f/maintainability)](https://codeclimate.com/github/clubhouse-protocol/server/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/36fabf44e561a0701a6f/test_coverage)](https://codeclimate.com/github/clubhouse-protocol/server/test_coverage) ![renovate](https://badges.renovateapi.com/github/clubhouse-protocol/server) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=clubhouse-protocol_server&metric=alert_status)](https://sonarcloud.io/dashboard?id=clubhouse-protocol_server)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lubhouse-protocol/server)
