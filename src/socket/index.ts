@@ -7,7 +7,9 @@ import MessageStore from '../MessageStore';
 type PromiseResolveType<Original> = Original extends Promise<infer ReturnType> ? ReturnType : never;
 
 const create = async (server: Server, store: MessageStore) => {
-  const app = socketio(server);
+  const app = socketio(server, {
+    origins: '*:*'
+  });
   let clients: Client[] = [];
 
   app.on('connect', (socket) => {
@@ -15,10 +17,14 @@ const create = async (server: Server, store: MessageStore) => {
     clients.push(client);
     client.on('message', (message: any) => {
       const hash = createHash('sha512').update(message.id).digest('hex');
+      console.log('clients', clients.length);
       clients.forEach(c => c.handleMessage({
         ...message,
         signal: hash,
       }));
+    });
+    client.on('disconnect', () => {
+      clients = clients.filter(c => c !== client);
     });
   });
 

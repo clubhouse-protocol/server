@@ -32,10 +32,12 @@ class Client extends EventEmitter {
     this.onMessage = this.onMessage.bind(this);
     this.onGet = this.onGet.bind(this);
     this.onWelcome = this.onWelcome.bind(this);
+    this.onDisconnect = this.onDisconnect.bind(this);
     socket.on('listen', this.onListen);
     socket.on('get', this.onGet);
     socket.on('message', this.onMessage);
     socket.once('welcome', this.onWelcome);
+    socket.on('disconnect', this.onDisconnect);
   }
 
   onListen(signal: string) {
@@ -56,6 +58,10 @@ class Client extends EventEmitter {
     this._socket.emit('welcome', {
       hello: 'world',
     });
+  }
+
+  onDisconnect() {
+    this.emit('disconnect');
   }
 
   handleMessage({ signal }: Message) {

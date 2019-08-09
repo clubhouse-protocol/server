@@ -1,4 +1,4 @@
-import Transporter from 'clubhouse-protocol/build/babel/Transporter';
+import { Transporter } from 'clubhouse-protocol';
 import client, { Socket } from 'socket.io-client';
 
 class SocketTransporter implements Transporter {
