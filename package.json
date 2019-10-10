@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "7.6.3",
-    "@babel/core": "7.6.3",
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.6.4",
     "@babel/node": "7.6.3",
     "@babel/polyfill": "7.6.0",
     "@babel/preset-env": "7.6.3",
