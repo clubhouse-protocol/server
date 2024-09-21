@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.60",
+  "version": "1.0.61",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "jasmine": "3.5.0",
     "jest": "24.9.0",
     "nyc": "14.1.1",
-    "socket.io-client": "2.3.0",
+    "socket.io-client": "4.8.0",
     "typescript": "3.8.2"
   },
   "dependencies": {
